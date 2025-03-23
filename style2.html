@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+
+    <title>Resume-template2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .resume-container {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .left-column {
+            background: #1a1a2e;
+            color: white;
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        .left-column h2 {
+            font-size: 18px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .left-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .left-column ul li {
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+        .left-column ul li i {
+            margin-right: 8px;
+        }
+
+        .right-column {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .right-column h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .right-column h3 {
+            margin: 10px 0 5px;
+            font-size: 24px;
+        }
+
+        .right-column p {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .sub-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .paragraph {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .git-link {
+            font-size: 14px;
+            color: #007bff;
+        }
+
+        .git-link a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-details {
+            margin-bottom: 15px;
+        }
+
+        .skill-span {
+            background: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        #skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        #referees-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #referees-container div {
+            width: 48%;
+        }
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important; /* For Chrome, Safari */
+                print-color-adjust: exact !important; /* Standard property */
+            }
+
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <div class="left-column">
+        <div class="profile-pic"></div>
+        <h2>Contact Details</h2>
+        <ul>
+            <li><i class="bi bi-phone"></i> Phone: xxx xxxx xxx</li>
+            <li><i class="bi bi-whatsapp"></i> WhatsApp: xxx xxxx xxx</li>
+            <li><i class="bi bi-envelope"></i> Email: yourname@gmail.com</li>
+        </ul>
+
+        <div class="section">
+            <div class="title">Skills</div>
+            <div id="skills-container">
+                <span class="skill-span">XXXX</span>
+                <span class="skill-span">XXXX</span>
+                <span class="skill-span">XXXX</span>
+                <span class="skill-span">XXXX</span>
+                <span class="skill-span">XXXX</span>
+                <span class="skill-span">XXXX</span>
+                <span class="skill-span">XXXX</span>
+                <span class="skill-span">XXXX</span>
+                <span class="skill-span">XXXX</span>
+                <span class="skill-span">XXXX</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-column">
+        <h1>NAME FULL</h1>
+        <h3>Software Engineer</h3>
+        <p>Short description about yourself.</p>
+
+        <div class="section">
+            <div class="title">Projects</div>
+            <div class="project-details">
+                <span class="sub-title">Project Name</span>
+                <div class="git-link">Link: <a href="link">https://github.com/username/project</a></div>
+                <span class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam consectetur cupiditate, esse ipsa ipsam itaque natus nostrum obcaecati pariatur praesentium quaerat, quibusdam reprehenderit repudiandae vitae voluptates voluptatibus voluptatum!</span>
+            </div>
+            <div class="project-details">
+                <span class="sub-title">Project Name</span>
+                <div class="git-link">Link: <a href="link">https://github.com/username/project</a></div>
+                <span class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam consectetur cupiditate, esse ipsa ipsam itaque natus nostrum obcaecati pariatur praesentium quaerat, quibusdam reprehenderit repudiandae vitae voluptates voluptatibus voluptatum!</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title">Experience</div>
+            <div class="project-details">
+                <div style="display: flex">
+                    <span class="sub-title">Organization | </span>Month Year - Month Year
+                </div>
+                <span class="git-link">Title</span>
+                <span class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae commodi illo quod rem sint totam veniam? Aliquid doloremque ea incidunt iste, libero provident recusandae, sed sunt, tempora tenetur veritatis.</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title">Higher Education</div>
+            <div><span class="sub-title">Bachelor of Science (Hons) in Lorem</span><br>Faculty<br>University<br>Location</div>
+        </div>
+
+        <div class="section">
+            <div class="title">Referees</div>
+            <div id="referees-container">
+                <div><b>Referee 1 Name</b>,<br>Title<br>Organization<br>Location, Country<br>xx xxx xxxx<br><a href="mailto:referee1@example.com">referee1@example.com</a></div>
+                <div><b>Referee 2 Name</b>,<br>Title<br>Organization<br>Location, Country<br>xx xxx xxxx<br><a href="mailto:referee2@example.com">referee2@example.com</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
