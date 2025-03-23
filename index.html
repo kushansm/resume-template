@@ -10,11 +10,17 @@
   * {
     font-family: "Times New roman", Arial , sans-serif;
   }
+
   :root{
     --theme-grey: rgba(70,70,80,10);
     --line-gap: 5px;
     --margin: 10px;
   }
+
+  .git-link {
+    color: rgb(168, 130, 2);
+  }
+
   #head {
 
     color: white;
@@ -32,16 +38,88 @@
 
 
 
-    #image {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background-image: url('profpic.jpeg');
-      background-size: 347px;
-      background-position: 52% 19%;
-      margin: var(--margin);
+    body {
+      color: var(--theme-grey);
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    #head {
+
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: var(--theme-grey);
+
 
     }
+
+    #contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--line-gap);
+      margin: 5px;
+    }
+
+
+    img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+
+    .section {
+      display: flex;
+      flex-direction: column;
+
+      outline-offset: 10px;
+      gap: 20px;
+    }
+
+    .title {
+
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--theme-grey);
+      border-bottom: solid var(--theme-grey) 2px;
+    }
+
+    .project-details {
+      display: flex;
+      flex-direction: column;
+      gap: var(--line-gap);
+    }
+
+    .project-name {
+
+      font-weight: bold;
+    }
+
+    .paragraph {
+
+      text-align: justify;
+      width: 100%;
+      border-bottom: solid rgba(128, 128, 128, 0.45) 1px;
+      padding-bottom: 10px;
+
+
+    }
+
+    .paragraph_exp {
+
+      text-align: justify;
+      width: 100%;
+
+      padding-bottom: 10px;
+
+
+    }
+
     #details {
       display: flex;
       flex-flow: column;
@@ -56,23 +134,79 @@
 
       }
     }
+
+    #image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      /*background-image: url('profpic.jpg');*/
+      background-size: 327px;
+      background-position: 56% 56%;
+      margin: var(--margin);
+
+    }
+
+    .sub-title {
+      font-weight: bold;
+    }
   }
 </style>
 <body>
 <div id="head">
   <div id="details">
     <div id="nameAndTitle">
-      <span style="font-weight: bold; font-size: 1.5rem; color: white;">KUSHAN SIRIWARDHANA</span>
-      <span style="font-size: 1.2rem">&nbsp;<i class="bi bi-laptop"></i>SOFTWARE ENGINEER</span></div>
+      <span style="font-weight: bold; font-size: 1.5rem; color: white;">NAME</span>
+      <span style="font-size: 1.2rem">&nbsp;<i class="bi bi-laptop"></i>Tittle</span></div>
 
     <div id="contact-info">
-      <span><i class="bi bi-phone"></i> Phone: +94 71 3085242</span>
-      <span><i class="bi bi-whatsapp"></i> Whatsapp: +94 71 3085242</span>
-      <span><i class="bi bi-envelope"></i> Email: kushandileep12@gmail.com</span>
+      <span><i class="bi bi-phone"></i> Phone: xxx xxxx xxx</span>
+      <span><i class="bi bi-whatsapp"></i> Whatsapp: xxx xxxx xxx</span>
+      <span><i class="bi bi-envelope"></i> Email: yourname@gmail.com</span>
     </div>
   </div>
-  <div id="image">
+  <div id="image"></div>
+</div>
+
+
+<div class="section">
+  <span class="title">PROJECTS</span>
+
+
+  <div class="project-details">
+
+    <span class="sub-title">project name</span>
+
+    <div class="git-link">link: <a href="link">https://Lorem ipsum dolor
+      sit amet,</a>
+    </div>
+    <span class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam consectetur cupiditate, esse ipsa ipsam itaque natus nostrum obcaecati
+            pariatur praesentium quaerat, quibusdam reprehenderit repudiandae vitae voluptates voluptatibus voluptatum!</span>
+
   </div>
+  <div class="project-details">
+
+    <span class="sub-title">project name</span>
+
+    <div class="git-link">link: <a href="link">https://Lorem ipsum dolor
+      sit amet,</a>
+    </div>
+    <span class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam consectetur cupiditate, esse ipsa ipsam itaque natus nostrum obcaecati
+            pariatur praesentium quaerat, quibusdam reprehenderit repudiandae vitae voluptates voluptatibus voluptatum!</span>
+
+  </div>
+
+  <div class="project-details">
+
+    <span class="sub-title">project name</span>
+
+    <div class="git-link">link: <a href="link">https://Lorem ipsum dolor
+      sit amet,</a>
+    </div>
+    <span class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam consectetur cupiditate, esse ipsa ipsam itaque natus nostrum obcaecati
+            pariatur praesentium quaerat, quibusdam reprehenderit repudiandae vitae voluptates voluptatibus voluptatum!</span>
+
+  </div>
+
 </div>
 </body>
 </html>
