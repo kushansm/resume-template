@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kushan Dileep</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href=./node_modules/bootstrap-icons/font/bootstrap-icons.min.css>
+</head>
+<style>
+  * {
+    font-family: "Times New roman", Arial , sans-serif;
+  }
+  :root{
+    --theme-grey: rgba(70,70,80,10);
+    --line-gap: 5px;
+    --margin: 10px;
+  }
+  #head {
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--theme-grey);
+
+    #contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--line-gap);
+      margin: 5px;
+    }
+
+
+
+    #image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: url('profpic.jpeg');
+      background-size: 347px;
+      background-position: 52% 19%;
+      margin: var(--margin);
+
+    }
+    #details {
+      display: flex;
+      flex-flow: column;
+      gap: 20px;
+      margin: var(--margin);
+      margin-top: 15px;
+
+      #nameAndTitle {
+        display: flex;
+        flex-direction: column;
+        gap: var(--line-gap);
+
+      }
+    }
+  }
+</style>
+<body>
+<div id="head">
+  <div id="details">
+    <div id="nameAndTitle">
+      <span style="font-weight: bold; font-size: 1.5rem; color: white;">KUSHAN SIRIWARDHANA</span>
+      <span style="font-size: 1.2rem">&nbsp;<i class="bi bi-laptop"></i>SOFTWARE ENGINEER</span></div>
+
+    <div id="contact-info">
+      <span><i class="bi bi-phone"></i> Phone: +94 71 3085242</span>
+      <span><i class="bi bi-whatsapp"></i> Whatsapp: +94 71 3085242</span>
+      <span><i class="bi bi-envelope"></i> Email: kushandileep12@gmail.com</span>
+    </div>
+  </div>
+  <div id="image">
+  </div>
+</div>
+</body>
+</html>
