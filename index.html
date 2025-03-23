@@ -2,41 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kushan Dileep</title>
-  <link rel="stylesheet" href="./src/css/reset.css">
-  <link rel="stylesheet" href=./node_modules/bootstrap-icons/font/bootstrap-icons.min.css>
-</head>
-<style>
-  * {
-    font-family: "Times New roman", Arial , sans-serif;
-  }
+  <title>CV template</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <style>
+    * {
+      font-family: "Times New Roman", Arial, sans-serif;
 
-  :root{
-    --theme-grey: rgba(70,70,80,10);
-    --line-gap: 5px;
-    --margin: 10px;
-  }
 
-  .git-link {
-    color: rgb(168, 130, 2);
-  }
-
-  #head {
-
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--theme-grey);
-
-    #contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: var(--line-gap);
-      margin: 5px;
     }
 
+    :root {
+      --theme-grey: rgba(70, 70, 80, 10);
+      --line-gap: 5px;
+      --margin: 10px;
 
+    }
+
+    .git-link {
+      color: rgb(168, 130, 2);
+    }
+
+    a {
+      color: #0000EE
+    }
+
+    b {
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
 
     body {
       color: var(--theme-grey);
@@ -120,6 +117,21 @@
 
     }
 
+    #referees-container {
+      display: flex;
+
+      justify-content: space-between;
+    }
+
+    #skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      row-gap: 10px;
+
+
+    }
+
     #details {
       display: flex;
       flex-flow: column;
@@ -152,7 +164,7 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      /*background-image: url('profpic.jpg');*/
+      background-image: url('profpic.jpg');
       background-size: 327px;
       background-position: 56% 56%;
       margin: var(--margin);
@@ -162,8 +174,17 @@
     .sub-title {
       font-weight: bold;
     }
-  }
-</style>
+
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important; /* For Chrome, Safari */
+        print-color-adjust: exact !important; /* Standard property */
+      }
+    }
+
+
+  </style>
+</head>
 <body>
 <div id="head">
   <div id="details">
@@ -248,6 +269,7 @@
     location
   </div>
 </div>
+
 <div class="section">
   <span class="title">SKILLS</span>
   <div id="skills-container">
@@ -272,6 +294,7 @@
 
 
 </div>
+
 <div class="section">
   <span class="title">REFEREES</span>
   <div id="referees-container">
